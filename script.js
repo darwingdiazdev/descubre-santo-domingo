@@ -48,4 +48,50 @@ const efectoHabilidades = () => {
     }
 }
 
+// carousel.js
+
+const items = document.querySelectorAll('.carousel-item');
+let currentItem = 0;
+let intervalId;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  function showItem(index) {
+    items.forEach(item => item.classList.remove('active'));
+    items[index].classList.add('active');
+  }
+
+  function nextItem() {
+    currentItem = (currentItem + 1) % items.length;
+    showItem(currentItem);
+  }
+
+  function prevItem() {
+    currentItem = (currentItem - 1 + items.length) % items.length;
+    showItem(currentItem);
+  }
+
+  nextBtn.addEventListener('click', () => {
+    nextItem();
+    resetInterval();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevItem();
+    resetInterval();
+  });
+
+  function startAutoSlide() {
+    intervalId = setInterval(nextItem, 33000); // cada 3 segundos
+  }
+
+  function resetInterval() {
+    clearInterval(intervalId);
+    startAutoSlide();
+  }
+
+  startAutoSlide(); // comienza automáticamente
+});
 
