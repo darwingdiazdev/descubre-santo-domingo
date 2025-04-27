@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+#inicio{
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('https://scontent.fmrd1-1.fna.fbcdn.net/v/t1.6435-9/117037003_874670486392006_673406174961089721_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=U9XQbZoykOgQ7kNvwHAoJHX&_nc_oc=AdlahEcs_86PpUXkgjBB5FwrW0ZPGwD5XKxcwBjavYZEElBu6YohB4_t1PlldNpFAqw&_nc_zt=23&_nc_ht=scontent.fmrd1-1.fna&_nc_gid=8BuD8pThBoig4jmshVA1PA&oh=00_AfEWthxjcFohwvK7Sp83ya6eyr76TbZ0TQvcGugtyhzMcg&oe=6835F31A');
+  background-size: cover;
+  background-position: center center ;
+  height: 100vh;
+}
+#inicio .contenido header{
+  background: rgb(90,73,40);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top:0;
+}
+#inicio .contenido header .contenido-header{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.icons{
+  font-size: 60px;
+}
+.icons:hover{
+  cursor: pointer;
+}
+#inicio .contenido header .contenido-header h1{
+  text-align: center;
+  color: whitesmoke;
+}
+#inicio .contenido header .contenido-header nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+  color:rgb(134, 134, 134);
+
+}
+#inicio .contenido header .contenido-header .redes a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+  transition: .5s;
+} 
+#inicio .contenido header .contenido-header .redes a:hover{
+  color:rgb(134, 134, 134);
+
+}
+#inicio .contenido header .contenido-header .seleccionado{
+  color:rgb(134, 134, 134);
+}
+
+#inicio .contenido .presentacion{
+  max-width: 1100px;
+  height: 100vh;
+  margin:auto;
+  color:whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenida{
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#inicio .contenido .presentacion h2{
+  font-size: 55px;
+  margin-top: -17px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+  font-size: 25px;
+  color: #E6B325;
+}
+#inicio .contenido .presentacion .descripcion{
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 30px;
+  text-align: center;
+}
+#inicio .contenido .presentacion .descripcionF{
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 15px;
+  text-align: center;
+}
+#inicio .contenido .presentacion .buton{
+  text-decoration: none;
+  display: inline-block;
+  margin: 25px;
+  padding: 20px 25px;
+  border: 2px solid whitesmoke;
+  border-radius: 50px;
+  color:whitesmoke;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+#inicio .contenido .presentacion .buton:hover{
+  background-color: #E6B325;
+}
+#icono-navs{
+  color: whitesmoke;
+  display: none;
+}
+/* SOBRE MI  */
+#sobremi{
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: black;
+  display: flex;
+}
+#sobremi .contenedor-foto{
+  max-width: 400px;
+  width: 2000px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#sobremi .contenedor-foto img{
+  padding: 10px;
+  width: 310px;
+  height: 280px;
+  border-radius: 20px;
+  background: rgb(232, 221, 200);
+
+}
+#sobremi .contenedor-foto .cert{
+  display: inline-block;
+  text-decoration: none;
+  color:black;
+  border-radius: 30px;
+  padding: 10px 20px;;
+  border: 1px solid rgb(0, 33, 59);
+  margin-top:30px;
+  transition: .5s;
+}
+#sobremi .contenedor-foto .cert:hover{
+  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8));
+  color:whitesmoke;
+}
+#sobremi .sobremi{
+  margin: 0 40px;
+}
+#sobremi .contenedor-foto .descripcionU{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#sobremi .sobremi .titulo-seccion{
+  font-size: 22px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration: underline;
+  text-decoration-color:rgb(90,73,40);
+  text-decoration-thickness: 5px;
+}
+#sobremi .sobremi h2{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing:  2px; 
+}
+#sobremi .sobremi h2 span{
+  color: rgba(48,86,42);
+  font-weight: bold;
+}
+#sobremi .sobremi h3{
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#sobremi .sobremi p{
+  font-size: 14px;
+  line-height: 25px;
+  color:black;
+  margin-bottom: 12px;
+}
+.cert{
+  color: black;
+}
+.certifi{
+  color: #E6B325;
+  font-size: 20px;
+}
+.sobremi .infor{
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/* SERVICIOS  */
+#servicios{
+  padding: 100px 15px;
+  text-align: center;
+}
+#servicios .titulo-seccion{
+  font-size: 22px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration: underline;
+  text-decoration-color:rgb(90,73,40);
+
+  text-decoration-thickness: 5px;
+}
+#servicios .fila{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin:30px auto;
+}
+#servicios .fila .servicio {
+  max-width: 350px;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8));
+  padding: 30px;
+  margin:0 5px;
+  color: whitesmoke;
+  border-radius: 5px;
+  transition: .5s;
+}
+#servicios .fila .servicio:hover {
+  box-shadow: 5px 5px 10px grey, -5px -5px 10px gray;
+}
+#servicios .fila .servicio  h4{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+#servicios .fila .servicio .icono{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color:  #0F3460;
+  font-size: 30px;
+}
+#servicios .fila .servicio hr{
+  width: 30%;
+  margin: auto;
+  color: black;
+  margin-bottom: 25px;
+}
+#servicios .fila .servicio ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#servicios .fila .servicio p{
+  font-size: 14px;
+  line-height: 22px ;
+}
+/* SKILLS */
+.skills {
+  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8)), url(img/premium_photo-1678565869434-c81195861939.avif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  text-align: center;
+  color: whitesmoke;
+}
+.skills .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills .titulo-seccion {
+  font-size: 22px;
+  text-align: center;
+}
+.skills .fila .col h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.skills .fila {
+  display: flex;
+}
+.skills .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .skill{
+  margin-bottom: 15px;
+}
+.skills .skill .info{
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skill .lista{
+  display: inline-block;
+  margin-right: 20px;
+  height: 10px;
+  width: 10px;
+  background-color: whitesmoke;
+}
+.skills .skill .barra{
+  background-color: grey;
+  width: 100%;
+  height: 6px;
+  margin: 0;
+}
+/* esto se aplica luego con js  */
+.skills .skill .barra .barra-progreso1{
+  background-color: whitesmoke;
+  width: 85%;
+  height: 6px;
+  animation: progreso1 2s forwards;
+}
+.skills .skill .barra .barra-progreso2{
+  background-color: whitesmoke;
+  width: 80%;
+  height: 6px;
+  animation: progreso2 2s forwards;
+}
+.skills .skill .barra .barra-progreso3{
+  background-color: whitesmoke;
+  width: 75%;
+  height: 6px;
+  animation: progreso3 2s forwards;
+}
+.skills .skill .barra .barra-progreso4{
+  background-color: whitesmoke;
+  width: 90%;
+  height: 6px;
+  animation: progreso4 2s forwards;
+}
+.skills .skill .barra .barra-progreso5{
+  background-color: whitesmoke;
+  width: 85%;
+  height: 6px;
+  animation: progreso5 2s forwards;
+}
+.skills .skill .barra .barra-progreso6{
+  background-color: whitesmoke;
+  width: 80%;
+  height: 6px;
+  animation: progreso6 2s forwards;
+}
+.skills .skill .barra .barra-progreso7{
+  background-color: whitesmoke;
+  width: 85%;
+  height: 6px;
+  animation: progreso7 2s forwards;
+}
+.skills .skill .barra .barra-progreso8{
+  background-color: whitesmoke;
+  width: 75%;
+  height: 6px;
+  animation: progreso8 2s forwards;
+}
+.skills .skill .barra .barra-progreso9{
+  background-color: whitesmoke;
+  width: 90%;
+  height: 6px;
+  animation: progreso9 2s forwards;
+}
+@keyframes progreso1{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes progreso2{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes progreso3{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+  }
+}
+@keyframes progreso4{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes progreso5{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes progreso6{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes progreso7{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes progreso8{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+  }
+}
+@keyframes progreso9{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+
+/* PORTFOLIO  */
+#portfolio{
+  max-width: 1100px;
+  padding: 100px 0;
+  margin:auto;
+}
+#portfolio .titulo-seccion{
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 33, 59);
+  text-decoration-thickness: 5px;
+}
+#portfolio .fila{
+  display: flex;
+  justify-content: space-between;
+  margin:30px 0;
+}
+#portfolio .fila .proyecto{
+  max-width: 450px;
+  width: 400px;
+  height: 220px;
+  border: 2px solid rgba(0, 33, 59);
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#portfolio .fila .proyecto img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: .5s;
+}
+#portfolio .fila .proyecto:hover img{
+  filter: grayscale(0);
+}
+#portfolio .fila .proyecto .info{
+  position: absolute;
+  left: 0;
+  background-color: rgba(22, 33, 62,.8);
+  color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: .5s;
+}
+#portfolio .fila .proyecto .info .repo{
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+#portfolio .fila .proyecto:hover .info{
+  opacity: 1;
+  bottom: 0;
+}
+
+/* CONTACTO  */
+#contacto{
+  padding: 100px 15px;
+  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8)), url(img/portada-dia-programador-2560x950-1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#contacto .titulo-seccion{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+#contacto .contenedor-form{
+  text-align: center; 
+  padding: 20px;
+  color: whitesmoke;
+}
+#contacto .contenedor-form .contac{
+  margin-bottom: 20px;
+}
+#contacto a{
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 18px;
+  padding: 15px 15px;
+  border: 1px solid rgb(0, 33, 59);
+  border-radius: 50px;
+  color:black;
+  transition: .5s;
+  background-color: white;
+  text-decoration: none;
+  width: 15%;
+  align-items: center;
+}
+#contacto a:hover{
+  background-color: rgb(0, 33, 59);
+  color:whitesmoke;
+}
+footer{
+  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8));
+  color: whitesmoke;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer a{
+  text-decoration: none;
+  color:whitesmoke;
+  display: inline-block;
+  margin: 5px;
+  font-size: 26px;
+}
+/* RESPONSIVE  */
+
+@media screen and (max-width:800px){
+  .redes{
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  nav.responsive{
+    display: block;
+    background-color: rgba(0, 0, 0,.8);
+    width: 100%;
+    position:absolute;
+    top: 48px;
+    left:0;
+    padding: 10px 0;
+  }
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+  #icono-navs{
+    display: block;
+  }
+  #inicio .contenido .presentacion h2{
+    font-size: 40px;
+  }
+  .icons{
+    font-size: 25px;
+  }
+  #sobremi{
+    padding: 50px 0;
+    display: block;
+  }
+  #sobremi .contenedor-foto{
+    max-width: 200px;
+    margin:auto;
+  }
+  #sobremi .contenedor-foto img{
+    padding: 8px;
+  }
+  #sobremi .contenedor-foto .cert{
+    margin-bottom: 25px;
+  }
+  #sobremi .sobremi .titulo-seccion{
+    text-align: center;
+  }
+  #sobremi .sobremi h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  #servicios{
+    padding: 50px 15px;
+  }
+  #servicios .fila{
+    display: block;
+  }
+  #servicios .fila .servicio{
+    margin: 10px auto;
+  }
+  .skills .fila {
+    display: block;
+  }
+  .skills .fila .col {
+    width: 100%;
+  }
+  .skills .fila .col .barra-skill {
+    width: 100%;
+  }
+  #portfolio{
+    padding: 50px 0;
+  }
+  #portfolio .fila{
+    display: block;
+  }
+  #portfolio .fila .proyecto{
+    margin: 10px auto;
+  }
+  #contacto{
+    padding: 50px 15px;
+  }
+  #contacto .titulo-seccion{
+    font-size: 24px;
+  }
+  #contacto .contac{
+    font-size: 14px;
+  }
+  #contacto a{
+    width: 150px;
+  }
+  
+}
+
+
