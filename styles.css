@@ -736,7 +736,7 @@ footer a{
   flex-direction: column;
   justify-content: left;
   align-items: start;
-  gap: 10px;
+  gap: 2px;
 }
 .carousel-item .contenedor-lista .lista{
   display: flex;
@@ -795,4 +795,37 @@ footer a{
   background-color: rgb(90,73,40);
   color: rgb(232, 221, 200);
 
+}
+
+.carousel-item .contenedor-img{
+  width: 500px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item .contenedor-imgT{
+  width: 500px;
+  margin-left: 35px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item .img-carousel{
+  width: 120px; height: 120px; margin-top: 30px; margin-right: 15px; margin-left: 20px;
+  border-radius: 20px;
+  border: 3px solid rgb(90,73,40);
+}
+
+.carousel-item .img-carouselF{
+  width: 120px; height: 120px; margin-top: 30px; margin-right: 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(90,73,40);
+  margin-left: 15px;
+}
+
+.carousel-item .img-carouselL{
+  width: 400px; height: 180px; margin-top: 30px; margin-left: 80px;
+  border-radius: 20px;
+  border: 3px solid rgb(90,73,40);
 }
