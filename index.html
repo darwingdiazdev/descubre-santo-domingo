@@ -8,6 +8,11 @@
     <link rel="icon" href="img/logo2.png" type="image/png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -78,150 +83,181 @@
         </div>
       </section>
       <!--Servicios-->
-      <section id="servicios">
-        <h3 class="titulo-seccion">Producto Turístico</h3>
+      <section id="servicios" class="py-5" style="background-color: #f5f5dc;">
+        <h3 class="titulo-seccion text-center my-4">Producto Turístico</h3>
       
-        <div class="carousel-container">
-          <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" style="min-height: 500px;">
+      
+            <!-- Item 1 -->
             <div class="carousel-item active">
-              <h4 class="titulo">Nombre del producto</h4>
-              <p class="parrafo">Santo Domingo: Naturaleza, Cultura y Gastronomía </p>
-              <div class="contenedor-img">
-                <img src="img/pisca.jpg" alt="Pisca" class="img-carousel">
-                <img src="img/represa.jpeg" alt="Represa" class="img-carousel">
-                <img src="img/monumento.jpeg" alt="Monumento" class="img-carouselF">
-
-                
-              </div>
-
-            </div>
-            <div class="carousel-item">
-              <h4 class="titulo">Tipo de turismo</h4>
-              <div class="contenedor-lista">
-                  <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Turismo de naturaleza</p>
-                  <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Turismo cultural</p>
-                  <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Turismo rural</p>
-              </div>
-              <div class="contenedor-img">
-                <img src="img/paisajeG.jpeg" alt="paisaje" class="img-carousel">
-                <img src="img/templo.jpeg" alt="templo" class="img-carousel">                
-              </div>
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo"> Descripción general</h4>
-              <p class="parrafoL">Una experiencia integral en el corazón del páramo merideño, combinando 
-                recorridos naturales, gastronomía tradicional, costumbres andinas. Dirigido a 
-                viajeros que buscan desconexión, contacto con la naturaleza y descubrimiento 
-                cultural. </p>
-                <div class="contenedor-imgT">
-                  <img src="img/faro.jpeg" alt="Faro" class="img-carousel">
-                  <img src="img/camino.jpeg" alt="camino" class="img-carousel">   
+              <div class="text-center p-4">
+                <h4 class="titulo">Nombre del producto</h4>
+                <p class="parrafo">Santo Domingo: Naturaleza, Cultura y Gastronomía</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/pisca.jpg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/represa.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/monumento.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
                 </div>
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo">Servicios incluidos</h4>
-              <div class="contenedor-lista">
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Transporte interno</p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Alojamiento en posadas rurales</p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Guía turístico local certificado</p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Alimentación (desayuno, almuerzo, cena) típica andina</p>
-              </div>
-              
-              <h5 class="tituloS">Actividades programadas</h5> 
-              <div class="contenedor-lista">
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Caminatas ecológicas</p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Paseos a caballo</p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Observación de estrellas </p>
-              </div> 
-              
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo">Duración sugerida</h4>
-              <p> Opción de un día completo</p>
-              <div class="contenedor-img">
-                <img src="img/aviso.jpeg" alt="aviso" class="img-carousel">
-                <img src="img/nublado.jpeg" alt="nublado" class="img-carousel">
-                <img src="img/plaza.jpeg" alt="plaza" class="img-carouselF">
               </div>
             </div>
+      
+            <!-- Item 2 -->
             <div class="carousel-item">
-              <h4 class="
-              titulo">Segmento de mercado objetivo</h4>
-              <div class="contenedor-lista">
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Amantes de la naturaleza   </p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Eco-turistas   </p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Familias y grupos escolares   </p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Parejas que buscan experiencias románticas de montaña  </p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Fotógrafos de paisaje y vida silvestre </p>
-              </div>
-             
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo">Recursos turísticos principales</h4>
-              <h5 class="tituloS">Naturales: </h5>
-              <div class="contenedor-lista">
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Páramo de Santo Domingo   <p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Laguna de Santo Domingo <p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Frailejones y flora de alta montaña <p>
-              </div>
-                
-              <h5 class="tituloS" >Culturales: </h5>
-              <div class="contenedor-lista">
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Monumento Montaña de la Fe y Cristo de las Multitudes </p>
-                <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Gastronomía andina (trucha, pisca andina) </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <h4 class="titulo">Actividades complementarias</h4>
-              <div class="contenedor-lista">
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Picnic en áreas naturales </p>
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Fogatas nocturnas con música andina</p>
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Compra de productos artesanales locales </p>
-            </div>
-            <div class="contenedor-img">
-              <img src="img/casaPastel.jpeg" alt="aviso" class="img-carousel">
-              <img src="img/otravista.jpeg" alt="nublado" class="img-carousel">
-            </div>
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo">Valor diferencial</h4>
-              <div class="contenedor-lista">
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Clima de alta montaña (fresco todo el año)</p>
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Cielos despejados ideales para observación de estrellas</p>
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Combinación auténtica entre naturaleza y cultura  </p>
-              <p class="lista"><span style="margin-right: 17px; font-weight: bold;">•</span>Contacto directo con comunidades rurales </p>
-            </div>
-            <div class="contenedor-img">
-              <img src="img/valor.jpeg" alt="aviso" class="img-carousel">
-              <img src="img/diferencial.jpeg" alt="nublado" class="img-carousel">
-            </div>
-            </div>
-            <div class="carousel-item">
-              <h4 class="
-              titulo">Precio aproximado</h4>
-              <p class="parrafo" >(Varía según temporada y cantidad de personas, alojamiento y transporte 
-                incluido o no)</p>
-                <div class="contenedor-lista">
-                  <p class="listaF"><span style="margin-right: 17px; font-weight: bold;">•</span>Plan 1 día: desde $40- $60 por persona </p>
+              <div class="text-center p-4">
+                <h4 class="titulo">Tipo de turismo</h4>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Turismo de naturaleza</p>
+                  <p>• Turismo cultural</p>
+                  <p>• Turismo rural</p>
                 </div>
-                <div class="contenedor-img">
-                  <img src="img/hotel.jpeg" alt="hotel" style="width: 250px; height: 170px; margin-top: 20px; border-radius: 20px; border: 3px solid rgb(90,73,40);margin-left: 50px;">
-                  
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/paisajeG.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/templo.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
                 </div>
+              </div>
             </div>
+      
+            <!-- Item 3 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Descripción general</h4>
+                <p class="parrafoL">
+                  Una experiencia integral en el corazón del páramo merideño, combinando recorridos naturales,
+                  gastronomía tradicional y costumbres andinas. Dirigido a viajeros que buscan desconexión, contacto con la
+                  naturaleza y descubrimiento cultural.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/faro.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/camino.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 4 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Servicios incluidos</h4>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Transporte interno</p>
+                  <p>• Alojamiento en posadas rurales</p>
+                  <p>• Guía turístico local certificado</p>
+                  <p>• Alimentación (desayuno, almuerzo, cena) típica andina</p>
+                </div>
+                <h5 class="tituloS mt-3">Actividades programadas</h5>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Caminatas ecológicas</p>
+                  <p>• Paseos a caballo</p>
+                  <p>• Observación de estrellas</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 5 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Duración sugerida</h4>
+                <p>Opción de un día completo</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/aviso.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/nublado.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/plaza.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 6 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Segmento de mercado objetivo</h4>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Amantes de la naturaleza</p>
+                  <p>• Eco-turistas</p>
+                  <p>• Familias y grupos escolares</p>
+                  <p>• Parejas que buscan experiencias románticas de montaña</p>
+                  <p>• Fotógrafos de paisaje y vida silvestre</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 7 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Recursos turísticos principales</h4>
+                <h5 class="tituloS">Naturales:</h5>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Páramo de Santo Domingo</p>
+                  <p>• Laguna de Santo Domingo</p>
+                  <p>• Frailejones y flora de alta montaña</p>
+                </div>
+                <h5 class="tituloS mt-3">Culturales:</h5>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Monumento Montaña de la Fe y Cristo de las Multitudes</p>
+                  <p>• Gastronomía andina (trucha, pisca andina)</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 8 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Actividades complementarias</h4>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Picnic en áreas naturales</p>
+                  <p>• Fogatas nocturnas con música andina</p>
+                  <p>• Compra de productos artesanales locales</p>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/casaPastel.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/otravista.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 9 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Valor diferencial</h4>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Clima de alta montaña (fresco todo el año)</p>
+                  <p>• Cielos despejados ideales para observación de estrellas</p>
+                  <p>• Combinación auténtica entre naturaleza y cultura</p>
+                  <p>• Contacto directo con comunidades rurales</p>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                  <img src="img/valor.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                  <img src="img/diferencial.jpeg" class="img-fluid rounded" style="width:120px; height:120px;">
+                </div>
+              </div>
+            </div>
+      
+            <!-- Item 10 -->
+            <div class="carousel-item">
+              <div class="text-center p-4">
+                <h4 class="titulo">Precio aproximado</h4>
+                <p class="parrafo">(Varía según temporada y cantidad de personas, alojamiento y transporte incluido o no)</p>
+                <div class="d-flex flex-column align-items-center">
+                  <p>• Plan 1 día: desde $40-$60 por persona</p>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <img src="img/hotel.jpeg" class="img-fluid rounded" style="width:250px; height:170px; border-radius:20px; border:3px solid rgb(90,73,40);">
+                </div>
+              </div>
+            </div>
+      
           </div>
       
-          <div class="carousel-controls">
-            <button id="prevBtn">&#10094;</button>
-            <button id="nextBtn">&#10095;</button>
-          </div>
+          <!-- Controles personalizados -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" style="filter: invert(28%) sepia(18%) saturate(1496%) hue-rotate(12deg) brightness(96%) contrast(88%);"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="filter: invert(28%) sepia(18%) saturate(1496%) hue-rotate(12deg) brightness(96%) contrast(88%);"></span>
+          </button>
+      
         </div>
       </section>
+      
       <!--Habilidades-->
       <section id="skills" class="skills">
         <div class="contenido-seccion">
@@ -242,7 +278,7 @@
     
       <!--Contacto-->
       <section id="contacto">
-        <h3 class="titulo-seccion">Contactame</h3>
+        <h3 class="titulo-seccion">Contactanos</h3>
         <div class="contenedor-form">
           <p class="contac">¿Buscas relajación, aventura y experiencias únicas? El páramo merideño te espera con su magia: montañas, cascadas, clima fresco y la calidez de su gente. Desde Santo Domingo, te llevamos a vivir rutas llenas de naturaleza, cultura y tradición.  
             Reconéctate con lo esencial y haz de tu viaje una experiencia inolvidable. ¡Contáctanos y empieza tu aventura en Mérida!</p>

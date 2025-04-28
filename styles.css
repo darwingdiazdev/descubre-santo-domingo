@@ -625,6 +625,9 @@ footer a{
   #contacto .contac{
     font-size: 14px;
   }
+  #contacto .redes{
+    width: 200px;
+  }
   #contacto a{
     width: 150px;
   }
@@ -791,6 +794,7 @@ footer a{
 }
 
 @media (max-width: 768px) {
+
   .carousel-container {
     max-width: 90%;
     padding: 10px;
