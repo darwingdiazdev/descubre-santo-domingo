@@ -293,7 +293,7 @@ html{
 }
 /* SKILLS */
 .skills {
-  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8)), url(img/premium_photo-1678565869434-c81195861939.avif);
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(img/fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,72 +470,11 @@ html{
   }
 }
 
-
-/* PORTFOLIO  */
-#portfolio{
-  max-width: 1100px;
-  padding: 100px 0;
-  margin:auto;
-}
-#portfolio .titulo-seccion{
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color:black;
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 33, 59);
-  text-decoration-thickness: 5px;
-}
-#portfolio .fila{
-  display: flex;
-  justify-content: space-between;
-  margin:30px 0;
-}
-#portfolio .fila .proyecto{
-  max-width: 450px;
-  width: 400px;
-  height: 220px;
-  border: 2px solid rgba(0, 33, 59);
-  margin: 0 10px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-#portfolio .fila .proyecto img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: .5s;
-}
-#portfolio .fila .proyecto:hover img{
-  filter: grayscale(0);
-}
-#portfolio .fila .proyecto .info{
-  position: absolute;
-  left: 0;
-  background-color: rgba(22, 33, 62,.8);
-  color: whitesmoke;
-  width: 100%;
-  padding: 10px;
-  opacity: 0;
-  bottom: -40px;
-  transition: .5s;
-}
-#portfolio .fila .proyecto .info .repo{
-  color: whitesmoke;
-  font-size: 30px;
-  margin-top: 5px;
-  margin-right: 5px;
-}
-#portfolio .fila .proyecto:hover .info{
-  opacity: 1;
-  bottom: 0;
-}
-
 /* CONTACTO  */
 #contacto{
   padding: 100px 15px;
-  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8)), url(img/portada-dia-programador-2560x950-1.jpg);
+  background: rgb(232, 221, 200);
+
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -546,38 +485,43 @@ html{
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  color: whitesmoke;
+  color: black
 }
 #contacto .contenedor-form{
   text-align: center; 
   padding: 20px;
-  color: whitesmoke;
+  color: black
 }
 #contacto .contenedor-form .contac{
   margin-bottom: 20px;
 }
-#contacto a{
+#contacto .redes{
   display: block;
   margin: auto;
   cursor: pointer;
   transition: .5s;
   font-size: 18px;
   padding: 15px 15px;
-  border: 1px solid rgb(0, 33, 59);
   border-radius: 50px;
-  color:black;
+  color:white;
   transition: .5s;
-  background-color: white;
   text-decoration: none;
   width: 15%;
   align-items: center;
+  gap: 20px;
+
+}
+#contacto a{
+  color: rgb(90,73,40);
+  margin-right: 20px;
+  font-size: 20px;
 }
 #contacto a:hover{
-  background-color: rgb(0, 33, 59);
-  color:whitesmoke;
+  color: rgb(134, 134, 134);
 }
 footer{
-  background: linear-gradient(rgb(0, 33, 59), rgba(22, 33, 62,.8));
+  background: rgb(90,73,40);
+
   color: whitesmoke;
   text-align: center;
   padding: 30px 0;
@@ -775,11 +719,11 @@ footer a{
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .carousel-controls button {
-  background: rgb(232, 221, 200);
+  background: transparent;
   
   border: none;
   color:rgb(90,73,40);
@@ -828,4 +772,74 @@ footer a{
   width: 400px; height: 180px; margin-top: 30px; margin-left: 80px;
   border-radius: 20px;
   border: 3px solid rgb(90,73,40);
+}
+
+.button-iti{
+  margin-top: 120px;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 3px solid rgb(90,73,40);
+  color:rgb(90,73,40)  ;
+  background: rgb(232, 221, 200);
+}
+
+.button-iti:hover{
+  background-color: rgb(134, 134, 134);
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%;
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .carousel-item .contenedor-img,
+  .carousel-item .contenedor-imgT {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-item .img-carousel,
+  .carousel-item .img-carouselF
+ {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    display: block;
+  }
+  .carousel-item .img-carouselL {
+    margin-right: 40px;
+  }
+
+  .carousel-container .titulo {
+    font-size: 20px;
+  }
+
+  .carousel-container .tituloS {
+    font-size: 16px;
+  }
+
+  .carousel-container .parrafo,
+  .carousel-container .parrafoL {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .carousel-item .contenedor-lista,
+  .carousel-item .contenedor-lista .lista,
+  .carousel-item .contenedor-lista .listaF {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }

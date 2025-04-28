@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function startAutoSlide() {
-    intervalId = setInterval(nextItem, 33000); // cada 3 segundos
+    intervalId = setInterval(nextItem, 5000); // cada 3 segundos
   }
 
   function resetInterval() {
