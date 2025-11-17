@@ -186,7 +186,7 @@ html{
   color:black;
   text-decoration: underline;
   text-decoration-color:rgb(90,73,40);
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 3px;
 }
 #sobremi .sobremi h2{
   font-size: 28px;
@@ -236,7 +236,7 @@ html{
   text-decoration: underline;
   text-decoration-color:rgb(90,73,40);
 
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 3px;
 }
 #servicios .fila{
   display: flex;
@@ -793,6 +793,16 @@ footer a{
   color: white;
 }
 
+/* Estilo para imágenes del carrusel */
+.carousel-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid rgb(90, 73, 40);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Flip Cards Styles */
 .flip-cards-container {
   display: flex;
@@ -937,5 +947,15 @@ footer a{
 
   .flip-cards-container {
     gap: 15px;
+  }
+
+  .carousel-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .carousel-img[style*="width:250px"] {
+    width: 200px !important;
+    height: 140px !important;
   }
 }
