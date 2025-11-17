@@ -95,3 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
   startAutoSlide(); // comienza automáticamente
 });
 
+// Funcionalidad para las tarjetas flip (click/touch)
+document.addEventListener('DOMContentLoaded', function() {
+  const flipCards = document.querySelectorAll('.flip-card');
+  
+  flipCards.forEach(card => {
+    card.addEventListener('click', function() {
+      const inner = this.querySelector('.flip-card-inner');
+      inner.classList.toggle('flipped');
+    });
+  });
+});
