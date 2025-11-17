@@ -819,9 +819,15 @@ footer a{
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner,
 .flip-card .flip-card-inner.flipped {
   transform: rotateY(180deg);
+}
+
+/* Hover solo en desktop, no interfiere con el click */
+@media (hover: hover) and (pointer: fine) {
+  .flip-card:hover .flip-card-inner:not(.flipped) {
+    transform: rotateY(180deg);
+  }
 }
 
 .flip-card-front,

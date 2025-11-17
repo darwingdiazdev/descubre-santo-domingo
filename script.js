@@ -98,11 +98,28 @@ document.addEventListener('DOMContentLoaded', function() {
 // Funcionalidad para las tarjetas flip (click/touch)
 document.addEventListener('DOMContentLoaded', function() {
   const flipCards = document.querySelectorAll('.flip-card');
+  const flipTimeouts = new Map(); // Almacenar los timeouts de cada tarjeta
   
   flipCards.forEach(card => {
     card.addEventListener('click', function() {
       const inner = this.querySelector('.flip-card-inner');
-      inner.classList.toggle('flipped');
+      
+      // Si ya hay un timeout pendiente, cancelarlo
+      if (flipTimeouts.has(this)) {
+        clearTimeout(flipTimeouts.get(this));
+        flipTimeouts.delete(this);
+      }
+      
+      // Voltear la tarjeta
+      inner.classList.add('flipped');
+      
+      // Después de 3 segundos, voltear de vuelta automáticamente
+      const timeoutId = setTimeout(() => {
+        inner.classList.remove('flipped');
+        flipTimeouts.delete(this);
+      }, 3000);
+      
+      flipTimeouts.set(this, timeoutId);
     });
   });
 });
